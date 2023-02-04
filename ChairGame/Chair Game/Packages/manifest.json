@@ -11,6 +11,8 @@
     "com.unity.timeline": "1.6.4",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.7.6",
+    "com.weston-wright.scriptable-renderer-helpers-urp": "https://github.com/westonwright/scriptable-renderer-helpers-urp.git",
+    "com.weston-wright.volumetric-lighting-2d-urp": "https://github.com/westonwright/volumetric-lighting-2d-urp.git",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

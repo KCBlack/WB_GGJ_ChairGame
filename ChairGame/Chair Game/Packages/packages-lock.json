@@ -262,6 +262,25 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.weston-wright.scriptable-renderer-helpers-urp": {
+      "version": "https://github.com/westonwright/scriptable-renderer-helpers-urp.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "12.0.0"
+      },
+      "hash": "d75e4f98229cd58471bc123d66013a525b35ba8f"
+    },
+    "com.weston-wright.volumetric-lighting-2d-urp": {
+      "version": "https://github.com/westonwright/volumetric-lighting-2d-urp.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "12.0.0",
+        "com.weston-wright.scriptable-renderer-helpers-urp": "1.0.0"
+      },
+      "hash": "df821d21b169861095c782cd13ee0352856d2f83"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

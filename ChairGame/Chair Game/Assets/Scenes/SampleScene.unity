@@ -1004,7 +1004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327058881}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.08, y: -5.44, z: 0}
+  m_LocalPosition: {x: 2.93, y: -5.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1030,6 +1030,10 @@ MonoBehaviour:
   xOffsetCam: 0
   yOffsetCam: 2
   zOffsetCam: 0
+  xMax: 0
+  xMin: 0
+  yMax: 0
+  yMin: 0
   isCutSceneCam: 0
   speed: 0.25
   max: 60
@@ -1181,7 +1185,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.32, y: 6.09}
+    oldSize: {x: 4.22, y: 4.09}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1287,10 +1291,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 1409811950}
-  multiplyForce: 2
-  maxDist: 8
-  offsetCos: 6
   centerOfMass: {fileID: 0}
+  rotationForce: 5
+  forceMultiplier: 2
+  chargeSpeed: 1
+  forceOffset: 2
+  groundedAngle: 45
+  groundedGrace: 0.2
 --- !u!4 &1409811955
 Transform:
   m_ObjectHideFlags: 0
@@ -1358,10 +1365,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 2029424465}
-  multiplyForce: 2
-  maxDist: 5
-  offsetCos: 4
   centerOfMass: {fileID: 1312875734}
+  rotationForce: 5
+  forceMultiplier: 2
+  chargeSpeed: 1
+  forceOffset: 2
+  groundedAngle: 45
+  groundedGrace: 0.2
 --- !u!4 &1501151856
 Transform:
   m_ObjectHideFlags: 0
@@ -1651,7 +1661,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.32, y: 6.09}
+    oldSize: {x: 4.22, y: 4.09}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

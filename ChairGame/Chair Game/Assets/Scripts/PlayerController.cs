@@ -200,6 +200,11 @@ public class PlayerController : MonoBehaviour
         */
     }
 
+    public float GetChargeValue()
+    {
+        return chargeValue;
+    }
+
 
     // track colliders if their surface vector is pointing upwards
     private void OnCollisionStay2D(Collision2D collision)

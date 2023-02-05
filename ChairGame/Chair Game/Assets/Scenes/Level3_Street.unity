@@ -8956,6 +8956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelGoal
       objectReference: {fileID: 0}
+    - target: {fileID: 7966880191022844182, guid: db17a0c2782578943a743a1b8ec72bfc, type: 3}
+      propertyPath: nextLevel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7966880191022844183, guid: db17a0c2782578943a743a1b8ec72bfc, type: 3}
       propertyPath: m_Enabled
       value: 0

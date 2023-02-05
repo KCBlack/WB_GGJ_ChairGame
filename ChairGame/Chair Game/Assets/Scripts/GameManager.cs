@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public static void LoadScene(int _sceneIndex)
+    public void LoadScene(int _sceneIndex)
     {
         SceneManager.LoadScene(_sceneIndex);
     }

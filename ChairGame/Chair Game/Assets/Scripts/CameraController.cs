@@ -11,8 +11,13 @@ public class CameraController : MonoBehaviour
     public float xOffsetCam;
     public float yOffsetCam;
     public float zOffsetCam;
+    public float xMax;
+    public float xMin;
+    public float yMax;
+    public float yMin;
+
     [Space]
-    public bool isCutSceneCam;
+    public bool isCutSceneCam = false;
 
     [Space]
     public float speed = 0.075f;
@@ -30,7 +35,7 @@ public class CameraController : MonoBehaviour
     {
         if (isCutSceneCam == false)
         {
-            Vector3 newPlayer = new Vector3(player.transform.position.x + xOffsetCam, player.transform.position.y + yOffsetCam, gameObject.transform.position.z + zOffsetCam);
+            Vector3 newPlayer = new Vector3(Mathf.Clamp(player.transform.position.x + xOffsetCam, xMin, xMax), Mathf.Clamp(player.transform.position.y + yOffsetCam, yMin, yMax), gameObject.transform.position.z + zOffsetCam);
             gameObject.transform.position = Vector3.SmoothDamp(gameObject.transform.position, newPlayer, ref velocity, speed, max);
         }
     }

@@ -840,6 +840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8515133635545347190, guid: e98bab9e23e49984b92427735f84cecd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e98bab9e23e49984b92427735f84cecd, type: 3}
 --- !u!1 &742108130
@@ -1020,7 +1024,8 @@ PrefabInstance:
       propertyPath: nextLevel
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7966880191022844176, guid: db17a0c2782578943a743a1b8ec72bfc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: db17a0c2782578943a743a1b8ec72bfc, type: 3}
 --- !u!1 &953816567
 GameObject:
@@ -1819,6 +1824,7 @@ MonoBehaviour:
   forceOffset: 2
   groundedAngle: 45
   groundedGrace: 0.2
+  jump: {fileID: 0}
 --- !u!4 &1409811955
 Transform:
   m_ObjectHideFlags: 0
@@ -1893,6 +1899,7 @@ MonoBehaviour:
   forceOffset: 2
   groundedAngle: 45
   groundedGrace: 0.2
+  jump: {fileID: 0}
 --- !u!4 &1501151856
 Transform:
   m_ObjectHideFlags: 0

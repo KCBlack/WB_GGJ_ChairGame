@@ -57,7 +57,7 @@ MonoBehaviour:
   yMin: -8.22
   isCutSceneCam: 0
   speed: 0.25
-  max: 60
+  max: 30
 --- !u!1 &4081048482545514068
 GameObject:
   m_ObjectHideFlags: 0

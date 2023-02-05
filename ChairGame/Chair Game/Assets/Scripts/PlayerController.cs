@@ -32,10 +32,11 @@ public class PlayerController : MonoBehaviour
     private float groundedGraceTimer = 0.0f;
     private List<(Collider2D collider, Vector2 normal)> currentColliders = new List<(Collider2D, Vector2)>();
 
-    private bool drag;
     private Rigidbody2D rb;
     private Camera mainCam;
 
+
+    [SerializeField] AudioClip jump;
 
     private bool charging = false;
     private Vector2 aimDirection = Vector2.up;
@@ -59,6 +60,7 @@ public class PlayerController : MonoBehaviour
         if(context.phase == InputActionPhase.Canceled)
         {
             charging = false;
+            GetComponent<AudioSource>().PlayOneShot(jump);
         }
     }
 
@@ -84,10 +86,10 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        drag = false;
         rb = GetComponent<Rigidbody2D>();
         rb.centerOfMass = rb.transform.InverseTransformPoint(centerOfMass.position);
         mainCam = Camera.main;
+        
     }
 
     //click and hold near player

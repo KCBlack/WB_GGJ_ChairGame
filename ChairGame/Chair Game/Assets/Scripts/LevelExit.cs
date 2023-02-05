@@ -15,6 +15,7 @@ public class LevelExit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Entered");
         gm.GetComponent<GameManager>().LoadScene(nextLevel);
     }
 }

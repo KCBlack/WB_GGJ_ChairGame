@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEditor.AnimatedValues;
-using UnityEditor.Rendering.LookDev;
 
 public class PlayerController : MonoBehaviour
 {
